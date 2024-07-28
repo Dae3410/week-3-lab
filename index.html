@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Added some text fonts that I found from google to make the traveling website vibes-->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+<script src="./node_modules/jquery/dist/jquery.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<body>
+   
+    <!--Here I am adding an image and using bootstrap to make sure the image covers the full width of the home page-->
+    
+    <header class="header">
+<div>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/60/b0/bd/bora-bora.jpg?w=1400&h=1400&s=1" class="img class="img-fluid src=""alt="Picture of Bora Bora">
+</div>
+
+<h1 class="header-text">Wanderlust</h1>
+
+</header>
+
+<!--I created my other pages including the navbar onto the pages-->
+<div>
+    <link rel="stylesheet" href="./about.html">
+    <link rel="stylesheet" href="./destinations.html">
+    <link rel="stylesheet" href="./index.html">
+</div>
+
+<!--I have my navbar located here-->
+<div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./destinations.html">Destinations</a>
+          </li> <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!--I have added my form and table so that costumers can leave reviews on the site-->
+<h3>Leave a Review</h3>
+<div>
+   <form class="info-table-form">
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="name" placeholder="Enter your name"></td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+                <td><textarea name="message" rows="3" placeholder="Enter your message"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<footer>Copy Rights 2024</footer>
+</body>
+</html>

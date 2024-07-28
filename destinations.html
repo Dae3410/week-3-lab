@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+<script src="./node_modules/jquery/dist/jquery.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/60/b0/bd/bora-bora.jpg?w=1400&h=1400&s=1" class="img class="img-fluid src=""alt="Picture of Bora Bora">
+    </div>
+    <h1>Destinations</h1>
+
+ <div>
+        <link rel="stylesheet" href="./about.html">
+        <link rel="stylesheet" href="./destinations.html">
+        <link rel="stylesheet" href="./index.html">
+ </div>
+
+ <div>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./destinations.html">Destinations</a>
+          </li> <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+ </div>
+
+ <!--I added my grid class button to add options of destinations people can travel to -->
+
+ <div class="grid-container">
+    <div class="grid-item" onclick="handleClick('Item 1')">Europe</div>
+    <div class="grid-item" onclick="handleClick('Item 2')">Caribbean</div>
+    <div class="grid-item" onclick="handleClick('Item 3')">Mexico</div>
+    <div class="grid-item" onclick="handleClick('Item 4')">Hawai'i</div>
+    <div class="grid-item" onclick="handleClick('Item 4')">Alaska</div>
+</div>
+
+</body>
+</html>
